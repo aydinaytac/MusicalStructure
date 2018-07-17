@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicalstructure.MainActivity"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:padding="@dimen/padding">
+
+        <TextView
+            style="@style/InfoTextStyle"
+            android:text="@string/main_info" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/pop">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_item_height"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/padding"
+                android:src="@drawable/pop" />
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/pop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/electronic">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_item_height"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/padding"
+                android:src="@drawable/electronic" />
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/electronic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rap">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_item_height"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/padding"
+                android:src="@drawable/rap" />
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/rap" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/classic">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_item_height"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/padding"
+                android:src="@drawable/classic" />
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/classic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
